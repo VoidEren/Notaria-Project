@@ -2,6 +2,7 @@ import React from 'react';
 import { Head } from '@inertiajs/react';
 import AuthenticatedLayout from '../Layouts/AuthenticatedLayout';
 import { Link } from "@inertiajs/react";
+import notariales2 from "@/assets/notariales2.jpg";
 
 export default function InicioRapido() {
     return (
@@ -53,10 +54,14 @@ export default function InicioRapido() {
 
                     {/* Columna visual o decorativa */}
                     <div className="w-1/2 bg-gray-100 flex items-center justify-center">
-                        <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-inner flex items-center justify-center">
-                            <span className="text-6xl text-gray-300">📄🏛️</span>
-                        </div>
-                    </div>
+            <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-inner flex items-center justify-center overflow-hidden">
+                <img
+                    src={notariales2}
+                    alt="Imagen Notaría 2"
+                    className="w-full h-full object-cover"
+                />
+            </div>
+        </div>
                 </div>
             </div>
         </AuthenticatedLayout>
