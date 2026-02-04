@@ -35,6 +35,31 @@ Route::get('/roles/access', function () {
     return Inertia::render('Roles/AccessRoles');
 })->name('roles.access');
 
+Route::get('/inicio-rapido/agendar-cita', function () {
+    return Inertia::render('inicio-rapido/AgendarCita');
+})->name('roles.agendar-cita');
+
+Route::get('/inicio-rapido/clientes-registrados', function(){
+    return Inertia::render('inicio-rapido/ClientesRegistrados');
+})->name('roles.clientes-registrados');
+
+Route::get('/inicio-rapido/configuracion', function(){
+    return Inertia::render('inicio-rapido/Configuracion');
+})->name('roles.configuracion');
+
+Route::get('/inicio-rapido/consultar-documentos', function(){
+    return Inertia::render('inicio-rapido/ConsultarDocumentos');
+})->name('roles.consultar-documentos');
+
+Route::get('/inicio-rapido/registrar-escritura', function(){
+    return Inertia::render('inicio-rapido/RegistrarEscritura');
+})->name('roles.registrar-escritura');
+
+Route::get('/inicio-rapido/tramites-pendientes', function(){
+    return Inertia::render('inicio-rapido/TramitesPendientes');
+})->name('roles.tramites-pendientes');
+
+
 // Rutas protegidas con autenticación
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

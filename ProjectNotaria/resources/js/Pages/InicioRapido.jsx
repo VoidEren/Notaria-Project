@@ -1,6 +1,7 @@
 import React from 'react';
 import { Head } from '@inertiajs/react';
 import AuthenticatedLayout from '../Layouts/AuthenticatedLayout';
+import { Link } from "@inertiajs/react";
 
 export default function InicioRapido() {
     return (
@@ -17,24 +18,36 @@ export default function InicioRapido() {
                         </p>
 
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200">
-                                <p className="font-semibold text-gray-700">Registrar Escritura</p>
-                            </div>
-                            <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200">
-                                <p className="font-semibold text-gray-700">Agendar Cita</p>
-                            </div>
-                            <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200">
-                                <p className="font-semibold text-gray-700">Consultar Documentos</p>
-                            </div>
-                            <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200">
-                                <p className="font-semibold text-gray-700">Clientes Registrados</p>
-                            </div>
-                            <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200">
-                                <p className="font-semibold text-gray-700">Trámites Pendientes</p>
-                            </div>
-                            <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200">
-                                <p className="font-semibold text-gray-700">Configuración</p>
-                            </div>
+                            <Link href="/inicio-rapido/registrar-escritura">
+                                <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200 cursor-pointer">
+                                    <p className="font-semibold text-gray-700">Registrar Escritura</p>
+                                </div>
+                            </Link>
+                            <Link href="/inicio-rapido/agendar-cita">
+                                <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200 cursor-pointer">
+                                    <p className="font-semibold text-gray-700">Agendar Cita</p>
+                                </div>
+                            </Link>
+                            <Link href="/inicio-rapido/consultar-documentos">
+                                <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200 cursor-pointer">
+                                    <p className="font-semibold text-gray-700">Consultar Documentos</p>
+                                </div>
+                            </Link>
+                            <Link href="/inicio-rapido/clientes-registrados">
+                                <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200 cursor-pointer">
+                                    <p className="font-semibold text-gray-700">Clientes Registrados</p>
+                                </div>
+                            </Link>
+                            <Link href="/inicio-rapido/tramites-pendientes">
+                                <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200 cursor-pointer">
+                                    <p className="font-semibold text-gray-700">Tramites Pendientes</p>
+                                </div>
+                            </Link>
+                            <Link href="/inicio-rapido/configuracion">
+                                <div className="bg-gray-100 p-6 rounded-lg text-center shadow hover:shadow-md transition duration-200 cursor-pointer">
+                                    <p className="font-semibold text-gray-700">Configuracion</p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 
